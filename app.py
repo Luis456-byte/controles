@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import credentials, db
 
 # Inicializa Firebase
-cred = credentials.Certificate("firebase.json")  # Asegúrate de tener este archivo en el mismo directorio
+cred = credentials.Certificate("credenciales.json")  # Asegúrate de tener este archivo en el mismo directorio
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://carrobot-3b7aa-default-rtdb.firebaseio.com/'  # Reemplaza con la URL de tu base de datos Firebase
 })
